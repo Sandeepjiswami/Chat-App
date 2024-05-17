@@ -1,0 +1,79 @@
+.Chatlist {
+    flex: 1;
+    overflow: auto;
+    height: 80%;
+    /* overflow-y: scroll; */
+    scrollbar-color: rgb(17, 25, 40, 0.5) rgb(17, 25, 40, 0.5);
+    /* scrollbar-width: 1px; */
+    overflow-clip-margin: 1em;
+
+
+
+    .search {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .searchBar {
+            background-color: rgb(17, 25, 40, 0.5);
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            border-radius: 10px;
+            padding: .8vw;
+            width: 10vw;
+            flex: 1;
+            margin-left: 10%;
+
+            input {
+                background-color: transparent;
+                border: none;
+                outline: none;
+                color: white;
+            }
+
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .add {
+            width: 1vw;
+            height: 1vw;
+            background-color: rgb(17, 25, 40, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    }
+
+    .item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        cursor: pointer;
+        border-bottom: 1px solid #dddd;
+    }
+    img{
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .iexts{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    span{
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
